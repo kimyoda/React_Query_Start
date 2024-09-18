@@ -1,4 +1,9 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import {
+  useIsFetching,
+  useIsMutating,
+  useMutation,
+  useQueryClient,
+} from "@tanstack/react-query";
 import "./App.css";
 import { usePost } from "./usePostByid";
 import { usePosts } from "./usePosts";
@@ -25,6 +30,10 @@ function App() {
   // const { data, isLoading } = usePosts(isAuth);
 
   // console.log(post);
+
+  // useIsFetching, useIsMutating
+  // const isFetching = useIsFetching()
+  // const isMutating = useIsMutating()
 
   return (
     <>
