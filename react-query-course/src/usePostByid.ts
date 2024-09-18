@@ -15,5 +15,7 @@ export function usePost(id: number) {
     enabled: !!id,
   });
 
+  // refetch();
+
   return { post: data, isLoading };
 }
